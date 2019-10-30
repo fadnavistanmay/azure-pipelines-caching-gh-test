@@ -14,7 +14,7 @@ steps:
 
 - task: CacheBeta@1
   inputs:
-    key: keynew22 | $(Agent.OS) | github
+    key: key | $(Agent.OS)
     path: $(Pipeline.Workspace)
   displayName: 'Cache something'
 
